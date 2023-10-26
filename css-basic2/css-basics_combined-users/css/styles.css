@@ -75,7 +75,13 @@ aside .name {
 
 aside .bio {
   font-size: 12px;
+  margin: 6px 0;
 }
+
+aside .location {
+  font-size: 10px;
+}
+
 /*
   Part 1
 
