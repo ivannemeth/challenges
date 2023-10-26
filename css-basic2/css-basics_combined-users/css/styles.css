@@ -19,9 +19,9 @@ body {
 
 main,
 aside {
-  max-width: 250px;
+  max-width: 800px;
   margin: 24x auto;
-  padding: 12px 32px;
+  padding: 16px 32px;
   border: 2px dotted lightslategray;
   border-radius: 4px;
   position: relative;
@@ -64,6 +64,18 @@ li {
   margin: 6px 0;
 }
 
+aside .user {
+  max-width: 250px;
+  padding: 12px;
+  border-radius: 4px;
+}
+aside .name {
+  font-size: 16px;
+}
+
+aside .bio {
+  font-size: 12px;
+}
 /*
   Part 1
 
