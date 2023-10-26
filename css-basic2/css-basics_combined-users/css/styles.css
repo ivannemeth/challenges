@@ -19,9 +19,9 @@ body {
 
 main,
 aside {
-  max-width: 800px;
-  margin: 24px auto;
-  padding: 16px 32px;
+  max-width: 250px;
+  margin: 24x auto;
+  padding: 12px 32px;
   border: 2px dotted lightslategray;
   border-radius: 4px;
   position: relative;
@@ -47,13 +47,13 @@ li {
 }
 
 .name {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   margin: 0;
 }
 
 .bio {
-  font-size: 14px;
+  font-size: 12px;
   color: darkslategray;
 }
 
@@ -61,7 +61,7 @@ li {
   font-size: 12px;
   font-weight: 600;
   text-align: end;
-  margin: 0;
+  margin: 6px 0;
 }
 
 /*
