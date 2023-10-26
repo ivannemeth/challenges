@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+  border: 1px solid;
+  padding: 4px;
+  border-radius: 4px;
+}
