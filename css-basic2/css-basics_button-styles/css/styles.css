@@ -30,18 +30,25 @@ button {
 /* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
+  border-radius: 4px;
+  border: 1px dotted;
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
 }
 
 .button2 {
+  color: red;
+  background-color: black;
   /*Style me! Change my color, or my background-color. Or both! You can test out different color modes here - like HEX, RGB, ... */
 }
 
 .button3 {
+  font-style: italic;
+  font-size: 25px;
   /*Style me! You can test out changing the font, or font size, ...*/
 }
 
 .button4 {
+  box-shadow: 5px -5px 10px rgba(29, 30, 107, 0.816);
   /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
 }
 
