@@ -20,7 +20,7 @@ body {
 main,
 aside {
   max-width: 800px;
-  margin: 24px auto;
+  margin: 24x auto;
   padding: 16px 32px;
   border: 2px dotted lightslategray;
   border-radius: 4px;
@@ -47,13 +47,13 @@ li {
 }
 
 .name {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   margin: 0;
 }
 
 .bio {
-  font-size: 14px;
+  font-size: 12px;
   color: darkslategray;
 }
 
@@ -61,7 +61,34 @@ li {
   font-size: 12px;
   font-weight: 600;
   text-align: end;
-  margin: 0;
+  margin: 6px 0;
+}
+
+aside .user {
+  max-width: 250px;
+  padding: 12px;
+  border-radius: 4px;
+}
+aside .name {
+  font-size: 16px;
+}
+
+aside .bio {
+  font-size: 12px;
+  margin: 6px 0;
+}
+
+aside .location {
+  font-size: 10px;
+}
+
+ul .bio {
+  display: none;
+}
+
+ul .location {
+  text-align: left;
+  color: darkslategray;
 }
 
 /*
