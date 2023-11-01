@@ -98,6 +98,5 @@ body {
 
 .element-20 {
   /* Add styles here */
-  grid-row-start: 6;
-  grid-row-end: 8;
+  grid-row: 6 / span 2;
 }
