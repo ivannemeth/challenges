@@ -9,6 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+const bookTitle = "Harry Potter";
+const bookAuthor = "Joanne K. Rowling";
+let bookRating = 9;
+let bookNumberofSales = 1500;
 
 // --^-- write your code here --^--
 
@@ -25,6 +29,19 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+bookRating = 10;
+bookNumberofSales = 1700;
+
+console.log(
+  "Title:",
+  bookTitle,
+  "Author:",
+  bookAuthor,
+  "Rating:",
+  bookRating,
+  "Sales:",
+  bookNumberofSales
+);
 
 // --^-- write your code here --^--
 
@@ -37,5 +54,22 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+
+bookNumberofSales = 2300;
+
+function logBookData() {
+  console.log(
+    "Title:",
+    bookTitle,
+    "Author:",
+    bookAuthor,
+    "Rating:",
+    bookRating,
+    "Sales:",
+    bookNumberofSales
+  );
+}
+
+logBookData();
 
 // --^-- write your code here --^--
