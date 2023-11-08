@@ -21,4 +21,15 @@ For that:
 
 const progressBar = document.querySelector('[data-js="progress-bar"]');
 
-function calculateScrollPercentage() {}
+function calculateScrollPercentage() {
+  var scrollTop = window.scrollY;
+  var viewportHeight = window.innerHeight;
+  var pageHeight = document.body.clientHeight;
+  var scrolledPercentage = (scrollTop / (pageHeight - viewportHeight)) * 100;
+  console.log("Scrolled Percentage:", scrolledPercentage);
+}
+console.log(scrolledPercentage);
+
+document.addEventListener("scroll"), () => {};
+
+console.log("Hello");
