@@ -7,11 +7,12 @@ console.log("Exercise 1:");
 */
 
 // Uncomment the next line of code and figure out why it does not work:
-// logText;
 
 function logText() {
   console.log("This text does not appear. Why?");
 }
+logText();
+// Solution: The function needs to be called after the function´s declaration
 
 console.log("-------------");
 console.log("Exercise 2:");
@@ -31,13 +32,18 @@ function greetMary() {
   console.log("Welcome Mary, good to see you again!");
 }
 
-greetAlice();
+/*greetAlice();
 greetBob();
-greetMary();
+greetMary(); */
 
 // --v-- write your code here --v--
 
-function greet() {}
+function greetPerson(name) {
+  console.log("Welcome " + name + ", " + "good to see you again!");
+}
+greetPerson("Alice");
+greetPerson("Bob");
+greetPerson("Marry");
 
 // --^-- write your code here --^--
 
@@ -51,4 +57,8 @@ Note: Separation text means the text that is logged into the console before each
 
 // --v-- write your code here --v--
 
+function logSeparator(numberOfExercise) {
+  console.log("*************\n" + "Exercise" + " " + numberOfExercise + ":");
+}
+logSeparator(3);
 // --^-- write your code here --^--
