@@ -17,11 +17,25 @@ For further information check MDN:
 
 */
 
-const colorInput = document.querySelector('[data-js="input-color"]');
-const radiusInput = document.querySelector('[data-js="input-radius"]');
-const rotationInput = document.querySelector('[data-js="input-rotation"]');
+const box = document.querySelector('[data-js="box"]');
+const colorSlider = document.querySelector('[data-js="input-color"]');
+const radiusSlider = document.querySelector('[data-js="input-radius"]');
+const rotationSlider = document.querySelector('[data-js="input-rotation"]');
 
+colorSlider.addEventListener("input", (e) => {
+  const colorSliderValue = colorSlider.value;
+  box.style.background = `hsl(${colorSliderValue}deg, 70%, 60%)`;
+  console.log(colorSliderValue);
+});
 
-colorInput.addEventListener("range", (e) => {
-console.log("hello")
+radiusSlider.addEventListener("input", (e) => {
+  const radiusSliderValue = radiusSlider.value;
+  box.style.borderRadius = `${radiusSliderValue}%`;
+  console.log(radiusSliderValue);
+});
 
+rotationSlider.addEventListener("input", (e) => {
+  const rotationSliderValue = rotationSlider.value;
+  box.style.transform = `rotate(${rotationSliderValue}deg)`;
+  console.log(rotationSliderValue);
+});
