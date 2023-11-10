@@ -13,6 +13,8 @@ function showTosError() {
   tosError.removeAttribute("hidden");
 }
 
+hideTosError();
+
 tosCheckbox.addEventListener("input", (event) => {
   event.preventDefault();
   if (event.target.checked) {
