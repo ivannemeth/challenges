@@ -39,7 +39,7 @@ console.log(questionsAndAnswersTogether);
 // ["How often can I use <header>? - As often as you like.", ...]
 
 const questionAndAnswer = cards.map((card) => {
-  const newObject = { question: card.question, answer: card.answer };
+  const newObject = { myQuestion: card.question, myAnswer: card.answer };
   return newObject;
 });
 console.log("003 ", questionAndAnswer);
