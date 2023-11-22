@@ -8,10 +8,17 @@ const item = ["Egg", 0.25, 12];
 
 // example: export const [value1, value2] = array;
 
+export const [name, price, quantity] = item;
+console.log(name, price, quantity);
+
 // EXERCISE 2
 // Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris" and "ageOfChris".
 
 const personChris = [12, "Chris", "Owen"];
+
+export const [ageOfChris, firstNameOfChris, lastNameOfChris] = personChris;
+
+console.log(ageOfChris, firstNameOfChris, lastNameOfChris);
 
 // EXERCISE 3
 // Use array destructuring to extract the variables "firstNameOfAlex" and "lastNameOfAlex".
@@ -19,17 +26,29 @@ const personChris = [12, "Chris", "Owen"];
 
 const personAlex = ["Alex", 12, "Main"];
 
+export const [firstNameOfAlex, , lastNameOfAlex] = personAlex;
+
+console.log(firstNameOfAlex, lastNameOfAlex);
+
 // EXERCISE 4
 // Use array destructuring to extract the last name from the array
 // as variable called "lastName".
 
 const students = ["Christina", "Jon", "Alexandare"];
 
+export const [, , lastName] = students;
+
+console.log(lastName);
 // EXERCISE 5
 // Use array destructuring to extract all of the names from this nested array.
 // Assign the given order of students to variables called "student1" to "student5".
 
 const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
+
+export const [student1, [student2, student3], [student4, student5]] =
+  nestedStudents;
+
+console.log(student1, student2, student3, student4, student5);
 
 // EXERCISE 6
 // Spread the values of the values array into the function call of the add function.
@@ -37,7 +56,8 @@ const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
 
 const values = [1, 6, 7, 9, 12, 5, 4];
 
-const result = add(1); // Spread values inside this function call
+const result = add(...values); // Spread values inside this function call
+console.log(result);
 
 function add(...values) {
   return values.reduce(
