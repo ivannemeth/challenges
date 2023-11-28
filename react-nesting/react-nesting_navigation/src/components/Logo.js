@@ -1,10 +1,11 @@
 import Image from "./components/Image";
-import logo from "./img/logo.jpg";
+import logo from "../img/logo.jpg";
+import Link from "./components/Link";
 
 export function Logo() {
   return (
-    <>
-      <Image src={logo} alt="alt" />
-    </>
+    <Link href="#">
+      <Image src={logo} alt={logo}></Image>
+    </Link>
   );
 }
