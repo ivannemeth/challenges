@@ -15,11 +15,36 @@ const initialLights = [
 
 export default function App({ Component, pageProps }) {
   const [lights, setLights] = useState(initialLights);
+  const sumOfOnLights = lights.find((light) => light.isOn === true).length;
+
+  function handleToggle(id) {
+    setLights(
+      lights.map((light) =>
+        light.id === id ? { ...light, isOn: !light.isOn } : light
+      )
+    );
+  }
+
+  function handleAllOff() {
+    setLights(lights.map((light) => ({ ...light, isOn: false })));
+    setIsDimmed(true);
+  }
+
+  function handleAllOn() {
+    setLights(lights.map((light) => ({ ...light, isOn: true })));
+  }
 
   return (
     <Layout>
       <GlobalStyle />
-      <Component {...pageProps} allLights={initialLights} />
+      <Component
+        {...pageProps}
+        lights={lights}
+        sumOfOnLights={sumOfOnLights}
+        onToggle={handleToggle}
+        allOff={handleAllOff}
+        allOn={handleAllOff}
+      />
     </Layout>
   );
 }
